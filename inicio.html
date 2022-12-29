@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu Portfólio</title>
+	<meta author="mopizin">
+	<link rel="stylesheet" type="text/css" href="css/html.css">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+
+	<link rel="website icon" type="png" href="images/icon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<header class='port-header'>
+		<img src="images/icon.png">
+		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;margin-bottom: 25px;
+				word-break: break-word;max-width: 200px;'>Meu discord: mpz#0136</p>
+	</header>
+
+	<section class='port-sections'>
+		<div class='port-section-div'>
+			<div class='banner fade'>
+				<img src="https://drive.google.com/uc?export=view&id=1Fnm3eZkNhMo_B7XwPYMKsXpxYAuQORiZ" alt="Anime">
+			</div>
+			<div class='banner fade'>
+				<img src="https://drive.google.com/uc?export=view&id=1TLaTrvfN1HMMYVhVJ077xEHHMYZOCFI3" alt="Anime">
+			</div>
+			<div class='banner fade'>
+				<img src="https://drive.google.com/uc?export=view&id=1abwNWdQO5GgUHnIZ_KrW8-kqLFfyod0F" alt="Anime">
+			</div>
+			<div class='banner fade'>
+				<img src="https://drive.google.com/uc?export=view&id=1OhWb6XQm_MsdGLH0G41DqHwl4OCFYpr_" alt="Anime">
+			</div>
+
+			<div class='port-section-div-text'>Banners de Anime</div>
+		</div>
+
+
+		<div class='port-section-div'>
+			<div class='banner2 fade'>
+				<img src="https://drive.google.com/uc?export=view&id=14dEpSO0AkAAgatM4yifg44_xXHo18BiF" alt="Diversos">
+			</div>
+			<div class='banner2 fade'>
+				<img src="https://drive.google.com/uc?export=view&id=1q0sbJObW1eDKm3-rTzHZC5miIlUT5du1" alt="Diversos">
+			</div>
+			<div class='banner2 fade'>
+				<img src="https://drive.google.com/uc?export=view&id=1zauaNcSskBamyx_6aqIEj1lhaXSndLeZ" alt="Diversos">
+			</div>
+			<div class='banner2 fade'>
+				<img src="https://drive.google.com/uc?export=view&id=1_o-446y0nTRzzVuIJIazyh5dHIZQMlMM" alt="Diversos">
+			</div>
+			<div class='port-section-div-text'>Diversos</div>
+		</div>
+	</section>
+
+		<script>
+			let slideIndex = 0;
+			let slideIndex2 = 0;
+			let slideIndex3 = 0;
+			showSlides();
+			showSlides2();
+			showSlides3();
+
+			function showSlides() {
+			  let i;
+			  let slides = document.getElementsByClassName("banner");
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}
+			  slides[slideIndex-1].style.display = "block";
+			  setTimeout(showSlides, 3000); // Change image every 2 seconds
+			}
+
+			function showSlides2() {
+			  let i;
+			  let slides = document.getElementsByClassName("banner2");
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";
+			  }
+			  slideIndex2++;
+			  if (slideIndex2 > slides.length) {slideIndex2 = 1}
+			  slides[slideIndex2-1].style.display = "block";
+			  setTimeout(showSlides2, 3000); // Change image every 2 seconds
+			}
+
+			function showSlides3() {
+			  let i;
+			  let slides = document.getElementsByClassName("embeds");
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";
+			  }
+			  slideIndex3++;
+			  if (slideIndex3 > slides.length) {slideIndex3 = 1}
+			  slides[slideIndex3-1].style.display = "block";
+			  setTimeout(showSlides3, 3000); // Change image every 2 seconds
+			}
+
+
+		</script>
+
+		<br/>
+		<br/>		
+	<footer class="rodape"><div class="rodapebackground"><h6>Made by MPZ ♥</h6></div></footer>
+</body>
+</html>
