@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu Portfólio</title>
+	<meta author="mopizin">
+	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+
+	<link rel="website icon" type="png" href="images/icon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<style>
+		.port-grid {
+		  display: flex;
+		  margin: 0 auto;
+		  justify-content: center;
+		  align-items: center;
+		  padding: 0 4px;
+		}
+
+		.port-grid-coluna {
+		  display: flex;
+		  flex-direction: column;
+		  padding: 20px;
+		}
+
+		.port-grid-coluna img {
+		  object-fit: contain;
+		  width: 100%;
+		  max-width: 500px;
+		  max-height: 500px;
+		  padding: 10px;
+		  border-radius: 25px;
+		  pointer-events: none;
+		}
+
+		.port-description {
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			color: white;
+			font-size: 1.3rem;
+			margin: 0 auto;
+			font-weight: normal;
+			text-align: center;
+			word-break: break-word;
+			vertical-align:top;
+			max-width:350px;
+			cursor: text;
+		}
+
+		.port-button{
+			display: flex;
+			padding: 15px;
+			border-radius: 25px;
+			background: rgba(0, 0, 0, 0);
+			color: white;
+			border: 1px solid white;
+			font-size: 1.3rem;
+			text-decoration-line: none;
+			font-family: Roboto, sans-serif;
+			transform: scale(1.0);
+		  	transition: transform 0.5s ease;
+		}
+
+		.port-button:hover {
+			transform: scale(1.1);
+		}
+	</style>
+</head>
+<body>
+
+	<header class='port-header' style='margin-bottom: 0px;'>
+		<img src="../images/icon.png">
+		<p id='jsEd'style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
+				word-break: break-word;max-width: 200px;'></p>
+		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
+				word-break: break-word;max-width: 200px;'>Categoria: Anime</p>
+	</header>
+
+	<section>
+		<div style='display: flex;justify-content: center;align-items: center;margin-bottom: 20px;'>
+			<a class='port-button' href="../index.html">Voltar para página inicial</a>
+		</div>
+		<div class='port-description'>
+			<span>
+				Olá visitante, você tem um bom gosto de categoria.
+				<br><br>
+				Bem, neste local você encontrará meus banners/embeds de anime entre diversos.
+				<br><span style='max-width:400px;color:indianred;'>(OBS: Os que estiverem com a opacidade baixa é antigo.)</span>
+			</span>
+		</div>
+	</section>
+
+	<section class="port-grid">
+		<div class="port-grid-coluna">
+			<img style='opacity: 30%;' src="https://drive.google.com/uc?export=view&id=1Fnm3eZkNhMo_B7XwPYMKsXpxYAuQORiZ" alt="Anime">
+			<img src="https://drive.google.com/uc?export=view&id=1TLaTrvfN1HMMYVhVJ077xEHHMYZOCFI3" alt="Anime">
+		</div>
+		<div class="port-grid-coluna">
+			<img src="https://drive.google.com/uc?export=view&id=1abwNWdQO5GgUHnIZ_KrW8-kqLFfyod0F" alt="Anime">
+			<img style='opacity: 30%;' src="https://drive.google.com/uc?export=view&id=1OhWb6XQm_MsdGLH0G41DqHwl4OCFYpr_" alt="Anime">
+		</div>
+	</section>
+
+
+	<script type="text/javascript">
+		var myDate = new Date();
+		var hrs = myDate.getHours();
+
+		var greet;
+
+		if (hrs < 12) {
+		  greet = 'Bom dia';
+		} else if (hrs >= 12 && hrs <= 17) {
+		  greet = 'Boa tarde';
+		} else if (hrs >= 17 && hrs <= 24) {
+		  greet = 'Boa noite';
+		}
+		document.getElementById('jsEd').innerHTML ='<b>' + greet + '</b>';
+
+	</script>
+	<footer class="rodape"><div class="rodapebackground"><h6>Made by MPZ ♥</h6></div></footer>
+
+</body>
+</html>

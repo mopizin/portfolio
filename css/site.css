@@ -40,7 +40,7 @@
 			max-width: 500px;
 			max-height: 500px;
 			border-radius: 25px;
-			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0)));
 		}
 
 		.port-section-div img:hover {
@@ -48,8 +48,8 @@
 			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
 		}
 
-		.port-section-div img:hover .port-section-div-text {
-			content: '';
+		.port-section-div:hover .port-section-div-text {
+			display: none;
 		}
 
 		.port-section-div-text {
@@ -62,6 +62,8 @@
 			color: white;
 			text-shadow: 2px 2px #8383;
 		}
+
+
 
 		.banner {
 			display: none;
@@ -113,7 +115,7 @@
 			max-width: 300px;
 			max-height: 300px;
 			border-radius: 25px;
-			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0)));
 		}
 
 		.port-section-div img:hover {
