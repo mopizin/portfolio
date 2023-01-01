@@ -35,6 +35,12 @@
 		  padding: 10px;
 		  border-radius: 25px;
 		  pointer-events: none;
+		  transform: scale(1);
+		  transition: transform 1s ease;
+		}
+
+		.port-grid-coluna img:hover{
+			transform: scale(1.1);
 		}
 
 		.port-description {
@@ -84,7 +90,7 @@
 		<p id='jsEd'style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
 				word-break: break-word;max-width: 200px;'></p>
 		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
-				word-break: break-word;max-width: 200px;'>Categoria: Anime</p>
+				word-break: break-word;max-width: 200px;'>Categoria: Diversos</p>
 	</header>
 
 	<section>
@@ -98,19 +104,18 @@
 			</span>
 		</div>
 	</section>
-
 	<section class="port-grid">
 		<div class="port-grid-coluna">
-			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>ANTIGO</span>
-			<img style='opacity: 30%;' src="https://drive.google.com/uc?export=view&id=1Fnm3eZkNhMo_B7XwPYMKsXpxYAuQORiZ" alt="Anime">
-			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>NOVO</span>
-			<img src="https://drive.google.com/uc?export=view&id=1TLaTrvfN1HMMYVhVJ077xEHHMYZOCFI3" alt="Anime">
+			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>GIF - NOVO <b style='color:lightgreen;'>(Clique para ir para o discord)</b></span>
+			<a target='_blank' href='https://discord.gg/elomania' style='cursor: pointer;'><img style='opacity: 100%;' src="https://cdn.glitch.global/461f1741-3fef-48c8-9e24-65dc0848aaff/elomania_compressed_9mb.gif?v=1672420606560" alt="Anime"></a>
+			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>PROFILE DISCORD - NOVO</span>
+			<img style='opacity: 100%;'src="https://cdn.glitch.global/461f1741-3fef-48c8-9e24-65dc0848aaff/kazuha.png?v=1672421113952" alt="Anime">
 		</div>
 		<div class="port-grid-coluna">
-			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>NOVO</span>
-			<img src="https://drive.google.com/uc?export=view&id=1abwNWdQO5GgUHnIZ_KrW8-kqLFfyod0F" alt="Anime">
 			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>ANTIGO</span>
-			<img style='opacity: 30%;' src="https://drive.google.com/uc?export=view&id=1OhWb6XQm_MsdGLH0G41DqHwl4OCFYpr_" alt="Anime">
+			<img style='opacity: 50%;' src="https://drive.google.com/uc?export=view&id=1zauaNcSskBamyx_6aqIEj1lhaXSndLeZ" alt="Anime">
+			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>ANTIGO</span>
+			<img style='opacity: 30%;' src="https://drive.google.com/uc?export=view&id=1_o-446y0nTRzzVuIJIazyh5dHIZQMlMM" alt="Anime">
 		</div>
 	</section>
 
@@ -129,6 +134,7 @@
 		  greet = 'Boa noite';
 		}
 		document.getElementById('jsEd').innerHTML ='<b>' + greet + '</b>';
+
 		document.addEventListener("contextmenu", function (e){
 	   	 e.preventDefault();
 		}, false);

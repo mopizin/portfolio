@@ -16,9 +16,13 @@
 <body>
 
 	<header class='port-header'>
-		<img src="images/icon.png">
+		<nav>
+			<img class='rodape' style='left: 48.6%;bottom: 1.5%;'src="images/icon.png">	
+		</nav>
 		<p id='jsEd'style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
 				word-break: break-word;max-width: 200px;'></p>
+		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
+				word-break: break-word;'>O portfólio está em desenvolvimento.</p>
 		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;margin-bottom: 25px;
 				word-break: break-word;max-width: 200px;'>Escolha uma categoria</p>
 	</header>
@@ -44,16 +48,16 @@
 
 		<div class='port-section-div'>
 			<div class='banner2 fade'>
-				<img src="https://drive.google.com/uc?export=view&id=14dEpSO0AkAAgatM4yifg44_xXHo18BiF" alt="Diversos">
+				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=14dEpSO0AkAAgatM4yifg44_xXHo18BiF" alt="Diversos"></a>
 			</div>
 			<div class='banner2 fade'>
-				<img src="https://drive.google.com/uc?export=view&id=1q0sbJObW1eDKm3-rTzHZC5miIlUT5du1" alt="Diversos">
+				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=1q0sbJObW1eDKm3-rTzHZC5miIlUT5du1" alt="Diversos"></a>
 			</div>
 			<div class='banner2 fade'>
-				<img src="https://drive.google.com/uc?export=view&id=1zauaNcSskBamyx_6aqIEj1lhaXSndLeZ" alt="Diversos">
+				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=1zauaNcSskBamyx_6aqIEj1lhaXSndLeZ" alt="Diversos"></a>
 			</div>
 			<div class='banner2 fade'>
-				<img src="https://drive.google.com/uc?export=view&id=1_o-446y0nTRzzVuIJIazyh5dHIZQMlMM" alt="Diversos">
+				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=1_o-446y0nTRzzVuIJIazyh5dHIZQMlMM" alt="Diversos"></a>
 			</div>
 			<div class='port-section-div-text'>Diversos</div>
 		</div>
@@ -117,12 +121,14 @@
 			  slides[slideIndex3-1].style.display = "block";
 			  setTimeout(showSlides3, 3000); // Change image every 2 seconds
 			}
-
+		document.addEventListener("contextmenu", function (e){
+	   	 e.preventDefault();
+		}, false);
 
 		</script>
 
 		<br/>
 		<br/>		
-	<footer class="rodape"><div class="rodapebackground"><h6>Made by MPZ ♥</h6></div></footer>
+	<footer class="rodape"><h6 style='color: white;'>Made by MPZ ♥</h6></footer>
 </body>
 </html>

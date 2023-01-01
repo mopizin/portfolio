@@ -17,15 +17,15 @@
 @media only screen and (min-width: 600px) {
 		.port-sections {
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 		  	justify-content: center;
 		  	align-items: center;
-		  	margin: 0 auto;
+		  	margin: 20px;
 		}
 
 
 		.port-section-div {
-			margin-bottom: 25px;
+			padding: 15px;
 		  	transform: scale(1);
 		  	transition: transform 0.5s ease;
 
@@ -40,7 +40,7 @@
 			max-width: 500px;
 			max-height: 500px;
 			border-radius: 25px;
-			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0)));
+			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
 		}
 
 		.port-section-div img:hover {
