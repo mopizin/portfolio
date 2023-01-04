@@ -12,128 +12,48 @@
 	<link rel="website icon" type="png" href="images/icon.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+	<style type="text/css">
+
+		.center {
+			display: flex;
+			position: absolute;
+			flex-direction: column;
+			margin: 0;
+			padding: 0;
+
+			left: 47%;
+			bottom: 47%;
+		}
+
+		.center img{
+			object-fit: contain;
+			width: 100%;
+			max-width: 100px;
+			max-height: 100px;
+		}
+
+		.center p{
+			left: 40%;
+			color: white;
+			text-align: center;
+			font-size: 1rem;
+		}
+	</style>
+
 </head>
 <body>
 
-	<header class='port-header'>
-		<nav>
-			<img class='rodape' style='left: 48.6%;bottom: 1.5%;'src="images/icon.png">	
-		</nav>
-		<p id='jsEd'style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
-				word-break: break-word;max-width: 200px;'></p>
-		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
-				word-break: break-word;'>O portfólio está em desenvolvimento.</p>
-		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;margin-bottom: 25px;
-				word-break: break-word;max-width: 200px;'>Escolha uma categoria</p>
-	</header>
-
-	<section class='port-sections'>
-		<div class='port-section-div'>
-			<div class='banner fade'>
-				<a href="categorias/animes.html"><img src="https://drive.google.com/uc?export=view&id=1Fnm3eZkNhMo_B7XwPYMKsXpxYAuQORiZ" alt="Anime"></a>
-			</div>
-			<div class='banner fade'>
-				<a href="categorias/animes.html"><img src="https://drive.google.com/uc?export=view&id=1TLaTrvfN1HMMYVhVJ077xEHHMYZOCFI3" alt="Anime"></a>
-			</div>
-			<div class='banner fade'>
-				<a href="categorias/animes.html"><img src="https://drive.google.com/uc?export=view&id=1abwNWdQO5GgUHnIZ_KrW8-kqLFfyod0F" alt="Anime"></a>
-			</div>
-			<div class='banner fade'>
-				<a href="categorias/animes.html"><img src="https://drive.google.com/uc?export=view&id=1OhWb6XQm_MsdGLH0G41DqHwl4OCFYpr_" alt="Anime"></a>
-			</div>
-
-			<div class='port-section-div-text'>Banners de Anime</div>
-		</div>
-
-
-		<div class='port-section-div'>
-			<div class='banner2 fade'>
-				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=14dEpSO0AkAAgatM4yifg44_xXHo18BiF" alt="Diversos"></a>
-			</div>
-			<div class='banner2 fade'>
-				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=1q0sbJObW1eDKm3-rTzHZC5miIlUT5du1" alt="Diversos"></a>
-			</div>
-			<div class='banner2 fade'>
-				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=1zauaNcSskBamyx_6aqIEj1lhaXSndLeZ" alt="Diversos"></a>
-			</div>
-			<div class='banner2 fade'>
-				<a href="categorias/diversos.html"><img src="https://drive.google.com/uc?export=view&id=1_o-446y0nTRzzVuIJIazyh5dHIZQMlMM" alt="Diversos"></a>
-			</div>
-			<div class='port-section-div-text'>Diversos</div>
+	<section class='centerflex'>
+		<div class='center'>
+			<img src="images/icon.png">
+			<p>Desenvolvimento</p>
+			<p>I'm sorry for this.</p>
 		</div>
 	</section>
 
-		<script>
-
-		var myDate = new Date();
-		var hrs = myDate.getHours();
-
-		var greet;
-
-		if (hrs < 12) {
-		  greet = 'Bom dia';
-		} else if (hrs >= 12 && hrs <= 19) {
-		  greet = 'Boa tarde';
-		} else if (hrs >= 20 && hrs <= 24) {
-		  greet = 'Boa noite';
-		}
-		document.getElementById('jsEd').innerHTML ='<b>' + greet + '</b>';
-
-		document.addEventListener("contextmenu", function (e){
-	   	 e.preventDefault();
-		}, false);
-
-			let slideIndex = 0;
-			let slideIndex2 = 0;
-			let slideIndex3 = 0;
-			showSlides();
-			showSlides2();
-			showSlides3();
-
-			function showSlides() {
-			  let i;
-			  let slides = document.getElementsByClassName("banner");
-			  for (i = 0; i < slides.length; i++) {
-			    slides[i].style.display = "none";
-			  }
-			  slideIndex++;
-			  if (slideIndex > slides.length) {slideIndex = 1}
-			  slides[slideIndex-1].style.display = "block";
-			  setTimeout(showSlides, 3000); // Change image every 2 seconds
-			}
-
-			function showSlides2() {
-			  let i;
-			  let slides = document.getElementsByClassName("banner2");
-			  for (i = 0; i < slides.length; i++) {
-			    slides[i].style.display = "none";
-			  }
-			  slideIndex2++;
-			  if (slideIndex2 > slides.length) {slideIndex2 = 1}
-			  slides[slideIndex2-1].style.display = "block";
-			  setTimeout(showSlides2, 3000); // Change image every 2 seconds
-			}
-
-			function showSlides3() {
-			  let i;
-			  let slides = document.getElementsByClassName("embeds");
-			  for (i = 0; i < slides.length; i++) {
-			    slides[i].style.display = "none";
-			  }
-			  slideIndex3++;
-			  if (slideIndex3 > slides.length) {slideIndex3 = 1}
-			  slides[slideIndex3-1].style.display = "block";
-			  setTimeout(showSlides3, 3000); // Change image every 2 seconds
-			}
-		document.addEventListener("contextmenu", function (e){
-	   	 e.preventDefault();
-		}, false);
-
-		</script>
-
-		<br/>
-
-		<br/>		
+	<script>document.addEventListener("contextmenu", function (e){e.preventDefault();}, false);</script>
+	<br/>
+	<br/>
 	<footer class="rodape"><h6 style='color: white;'>Made by MPZ ♥</h6></footer>
 </body>
 </html>
