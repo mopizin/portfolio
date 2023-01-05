@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Meu Portfólio</title>
+	<title>Portfólio - Categoria Diversos</title>
 	<meta author="mopizin">
 	<link rel="stylesheet" type="text/css" href="../css/html.css">
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
@@ -12,98 +12,28 @@
 	<link rel="website icon" type="png" href="images/icon.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<style>
-		.port-grid {
-		  display: flex;
-		  margin: 0 auto;
-		  justify-content: center;
-		  align-items: center;
-		  padding: 0 4px;
-		}
-
-		.port-grid-coluna {
-		  display: flex;
-		  flex-direction: column;
-		  padding: 20px;
-		}
-
-		.port-grid-coluna img {
-		  object-fit: contain;
-		  width: 100%;
-		  max-width: 500px;
-		  max-height: 500px;
-		  padding: 10px;
-		  border-radius: 25px;
-		  pointer-events: none;
-		  transform: scale(1);
-		  transition: transform 1s ease;
-		}
-
-		.port-grid-coluna img:hover{
-			transform: scale(1.1);
-		}
-
-		.port-description {
-			
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			color: white;
-			font-size: 1.3rem;
-			margin: 0 auto;
-			font-weight: normal;
-			text-align: center;
-			word-break: break-word;
-			vertical-align:top;
-			max-width:350px;
-			cursor: text;
-		}
-
-		.port-button{
-			display: flex;
-			padding: 15px;
-			border-radius: 25px;
-			background: rgba(0, 0, 0, 0);
-			color: rgba(255, 255, 255, 0.1);
-			border: 1px solid rgba(255, 255, 255, 0.1);
-			font-size: 1.3rem;
-			text-decoration-line: none;
-			font-family: Roboto, sans-serif;
-			transform: scale(1.0);
-		  	transition: transform 0.5s ease, color 0.5s ease, border 0.5s ease-out;
-		}
-
-		.port-button:hover {
-			color: white;
-			border: 1px solid rgba(255, 255, 255, 1);
-			transform: scale(1.1);
-		}
-	</style>
 </head>
-<body>
+<body class='bd'>
 
-	<header class='port-header' style='margin-bottom: 0px;'>
-		<nav>
-			<img class='rodape' style='left: 48.6%;bottom: 1.5%;'src="../images/icon.png">	
-		</nav>
-		<p id='jsEd'style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
-				word-break: break-word;max-width: 200px;'></p>
-		<p style='display: flex;justify-content: center;align-items: center;text-align: center;color: white;margin: 0 auto;
-				word-break: break-word;max-width: 200px;'>Categoria: Diversos</p>
+	<header>
+		<div class='n'>
+			<a class='g h' href="../index.html">VOLTAR</a>
+			<img id='m' src="../images/icon.png">
+			<div class='dd'>
+				<a class='g h'>REDES SOCIAIS</a>
+				<div class='ddc'>
+					<a target='_blank' href="https://www.instagram.com/mopizinn/">Instagram</a>
+					<a target='_blank' href="https://discord.gg/xS56G2BkRy">Discord</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h1 class='snac' style='color:white'>Categoria selecionada:</h1>
+			<h1 class='na site-title' style='color:white'>DIVERSOS</h1>
+		</div>
 	</header>
 
-	<section>
-		<div style='display: flex;justify-content: center;align-items: center;margin-bottom: 20px;'>
-			<a class='port-button' href="../index.html">Voltar para página inicial</a>
-		</div>
-		<div class='port-description'>
-			<span>
-				Olá visitante, você tem um bom gosto de categoria.
-				<br><span style='color:indianred;'>(Os que estiverem com a opacidade baixa é antigo.)</span>
-			</span>
-		</div>
-	</section>
 	<section class="port-grid">
 		<div class="port-grid-coluna">
 			<span style='margin:0;padding: 0;color: white;font-size: 1rem;margin:5px 6px;'>GIF - NOVO <b style='color:lightgreen;'>(Clique para ir para o discord)</b></span>
@@ -118,28 +48,11 @@
 			<img style='opacity: 30%;' src="https://drive.google.com/uc?export=view&id=1_o-446y0nTRzzVuIJIazyh5dHIZQMlMM" alt="Anime">
 		</div>
 	</section>
+	<br>
 
 
-	<script type="text/javascript">
-		var myDate = new Date();
-		var hrs = myDate.getHours();
 
-		var greet;
-
-		if (hrs < 12) {
-		  greet = 'Bom dia';
-		} else if (hrs >= 12 && hrs <= 19) {
-		  greet = 'Boa tarde';
-		} else if (hrs >= 20 && hrs <= 24) {
-		  greet = 'Boa noite';
-		}
-		document.getElementById('jsEd').innerHTML ='<b>' + greet + '</b>';
-
-		document.addEventListener("contextmenu", function (e){
-	   	 e.preventDefault();
-		}, false);
-
-	</script>
+	<script src="js/js.js"></script>
 	<footer class="rodape"><h6 style='color: white;'>Made by MPZ ♥</h6></footer>
 
 </body>

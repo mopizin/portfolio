@@ -1,0 +1,207 @@
+
+@media only screen and (max-width: 600px) {
+		.section-feedback {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			padding: 0;
+			margin-bottom: 20px;
+
+     		overflow-x: auto;
+     		overflow-y: hidden;
+		}
+
+
+		.section-feedback-base-infos {
+			padding: 0;
+			margin: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			color: white;
+			text-align: center;
+			word-break: break-word;
+			vertical-align:top;
+			border-radius: 20px;
+			box-shadow: 0px 24px 23px -11px rgba(0,0,0,0.1);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+
+		}
+		
+		.section-feedback-base-infos-feedback {
+			font-size: 2rem;
+			text-align: center;
+			word-break: break-all;
+			width: 150px;
+			margin: 0 auto;
+			color: white;
+			text-align: center;
+			word-break: break-word;
+			vertical-align:top;
+			max-width:250px;
+			padding: 5px;
+			line-height: auto;
+		}
+
+		.section-feedback-base-infos h6{
+			font-size: 2rem;
+			text-align: center;
+			padding: 10px;
+			
+		}
+
+		.section-feedback-base-infos-shop{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1rem;
+			text-align: center;
+			padding: 5px;
+		}
+}
+
+@media only screen and (min-width: 600px) {
+		.section-feedback {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			padding: 0;
+			margin-bottom: 20px;
+
+     		overflow-x: auto;
+     		overflow-y: hidden;
+		}
+
+
+		.section-feedback-base-infos {
+			padding: 0;
+			margin: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			color: white;
+			text-align: center;
+			word-break: break-word;
+			vertical-align:top;
+			border-radius: 20px;
+			box-shadow: 0px 24px 23px -11px rgba(0,0,0,0.1);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+
+		}
+		
+		.section-feedback-base-infos-feedback {
+			font-size: 2rem;
+			text-align: center;
+			word-break: break-all;
+			width: 150px;
+			margin: 0 auto;
+			color: white;
+			text-align: center;
+			word-break: break-word;
+			vertical-align:top;
+			max-width:250px;
+			line-height: auto;
+		}
+
+		.section-feedback-base-infos h6{
+			font-size: 2rem;
+			text-align: center;
+			padding: 10px;
+			
+		}
+
+		.section-feedback-base-infos-shop{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1rem;
+			text-align: center;
+			padding: 5px;
+		}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+			.section-feedback {
+
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			margin: 10px;
+     		padding: 0;
+     		overflow-x: auto;
+     		overflow-y: hidden;
+
+		}
+
+		.section-feedback-base-infos {
+			padding: 0;
+			margin: 10px;
+			display: inline-block;
+			justify-content: center;
+			align-items: center;
+
+			color: white;
+			text-align: center;
+			word-break: break-word;
+			vertical-align:top;
+			border-radius: 20px;
+			box-shadow: 0px 24px 23px -11px rgba(0,0,0,0.1);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+
+		}
+
+		.section-feedback-base-infos img {
+			width: 100%;
+			max-width: 200px;
+			border-radius: 10%;
+			pointer-events: none;
+			object-fit: contain;
+		}
+
+		.section-feedback-base-infos-feedback{
+			font-size: 2rem;
+			text-align: center;
+			word-break: break-all;
+			width: 150px;
+			margin: 0 auto;
+			color: white;
+			text-align: center;
+			word-break: break-word;
+			vertical-align:top;
+			max-width:250px;
+			padding: 5px;
+			line-height: auto;
+		}
+		
+
+		.section-feedback-base-infos h6{
+			padding: 10px;
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.section-feedback-base-infos-shop{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1rem;
+			text-align: center;
+			padding: 5px;
+		}
+
+
+}
+
+
+@keyframes scale-in-center{0%{transform:scale(1);opacity:1}100%{transform:scale(1.1);opacity:1}}
+@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
