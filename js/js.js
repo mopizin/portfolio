@@ -8,7 +8,7 @@ $(function() {
 });
 
 
-		var myDate = new Date();
+var myDate = new Date();
 		var h = myDate.getHours();
 
 		var greet;

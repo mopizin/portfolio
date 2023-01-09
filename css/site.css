@@ -1,77 +1,31 @@
 
-
-		.port-grid {
-		  display: flex;
-		  margin: 0 auto;
-		  justify-content: center;
-		  align-items: center;
-		  padding: 0 4px;
-		}
-
-		.port-grid-coluna {
-		  display: flex;
-		  flex-direction: column;
-		  padding: 20px;
-		}
-
-		.port-grid-coluna img {
-		  object-fit: contain;
-		  width: 100%;
-		  max-width: 500px;
-		  max-height: 500px;
-		  padding: 10px;
-		  border-radius: 25px;
-		  pointer-events: none;
-		}
-
-		.port-description {
-			
+		.p {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
-			align-items: center;
-
-			color: white;
-			font-size: 1.3rem;
-			margin: 0 auto;
-			font-weight: normal;
-			text-align: center;
-			word-break: break-word;
-			vertical-align:top;
-			max-width:350px;
-			cursor: text;
+			align-content: center;
 		}
 
-		.port-button{
-			display: flex;
-			padding: 15px;
-			border-radius: 25px;
-			background: rgba(0, 0, 0, 0);
-			color: rgba(255, 255, 255, 0.1);
-			border: 1px solid rgba(255, 255, 255, 0.1);
-			font-size: 1.3rem;
-			text-decoration-line: none;
-			font-family: Roboto, sans-serif;
+		.pc {
+		  display: block;
+		  padding: 15px;
+
+		}
+
+		.pci img {
+			width: 100%;
+			max-width: 410px;
+			max-height: 238px;
+			border-radius: 5px 5px 5px 5px;
+			pointer-events: none;
 			transform: scale(1.0);
-		  	transition: transform 0.5s ease, color 0.5s ease, border 0.5s ease-out;
+			transition: transform 0.5s ease;
 		}
 
-		.port-button:hover {
-			color: white;
-			border: 1px solid rgba(255, 255, 255, 1);
-			transform: scale(1.1);
+		.pci:hover img {
+			transform: scale(1.05);
 		}
 
-		.port-header img {
-
-		display: flex;
-		margin: 0 auto;
-		justify-content: center;
-		align-items: center;
-		max-width: 50px;
-		max-height: 50px;
-		animation:scale-in-center 1s both;
-
-	}
 
 		.n {
 			display: flex;
@@ -125,8 +79,7 @@
 
 			display: flex;
 			margin-top: 50px;
-			letter-spacing: 5px;
-			font-size: 30px;
+			font-size: 20px;
 			font-weight: lighter;
 			justify-content: center;
 			align-items: center;
@@ -155,15 +108,13 @@
 			padding: 0;
 			justify-content: center;
 			align-items: center;
-			animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
+			
 
 		}
 
 		.nad {
 			display: flex;
 			margin: 0 auto;
-			justify-content: center;
-			align-items: center;
 			flex: 100%;
 			font-size: 1rem;
 			max-width: 336px;
@@ -187,7 +138,6 @@
 
 			display: flex;
 			margin-top: 50px;
-			letter-spacing: 5px;
 			font-size: 30px;
 			font-weight: lighter;
 			justify-content: center;
@@ -215,7 +165,7 @@
 			font-size: 100px;
 			justify-content: center;
 			align-items: center;
-			animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
+			
 
 		}
 
@@ -244,9 +194,8 @@
 			animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
 		}
 	}
-		@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+			
 		@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
-		@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
 
 		/* DROPDOWN */
@@ -289,149 +238,5 @@
 
 @keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
 
-/* SECTIONS DIVS */
-@media only screen and (min-width: 600px) {
-		.port-sections {
-			display: flex;
-			flex-direction: row;
-		  	justify-content: center;
-		  	align-items: center;
-		  	margin: 20px;
-		}
-
-
-		.port-section-div {
-			padding: 15px;
-		  	transform: scale(1);
-		  	transition: transform 0.5s ease;
-
-		}
-
-		.port-section-div:hover {
-			transform: scale(1.1);
-		}
-
-		.port-section-div img{
-			width: 100%;
-			max-width: 500px;
-			max-height: 500px;
-			border-radius: 25px;
-			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
-		}
-
-		.port-section-div img:hover {
-			color: white;
-			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
-		}
-
-		.port-section-div:hover .port-section-div-text {
-			display: none;
-		}
-
-		.port-section-div-text {
-			font-family         : 'Roboto', sans-serif;
-			font-weight: bold;
-			position: absolute;
-			top: 45%;
-			margin-left: 100px;
-			font-size: 2.5rem;
-			color: white;
-			text-shadow: 2px 2px #8383;
-		}
-
-
-
-		.banner {
-			display: none;
-		}
-
-		.banner2 {
-			display: none;
-		}
-
-		.embeds {
-			display: none;
-		}
-
-		.fade {
-		animation-name: fade;
-		animation-duration: 1.5s;
-		}
-
-		@keyframes fade {
-		from {opacity: .4}
-		to {opacity: 1}
-		}
-}
-
-@media only screen and (max-width: 600px) {
-		.port-sections {
-			display: flex;
-			flex-direction: column;
-		  	justify-content: center;
-		  	align-items: center;
-
-		  	margin: 0 auto;
-		}
-
-
-		.port-section-div {
-			margin-bottom: 25px;
-		  	transform: scale(1);
-		  	transition: transform 0.5s ease;
-
-		}
-
-		.port-section-div:hover {
-			transform: scale(1.1);
-		}
-
-		.port-section-div img{
-			width: 100%;
-			max-width: 300px;
-			max-height: 300px;
-			border-radius: 25px;
-			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0)));
-		}
-
-		.port-section-div img:hover {
-			color: white;
-			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
-		}
-
-		.port-section-div img:hover .port-section-div-text {
-			content: '';
-		}
-
-		.port-section-div-text {
-			font-family         : 'Roboto', sans-serif;
-			font-weight: bold;
-			position: absolute;
-			top: 45%;
-			margin-left: 50px;
-			color: white;
-			text-shadow: 2px 2px #8383;
-		}
-
-		.banner {
-			display: none;
-		}
-
-		.banner2 {
-			display: none;
-		}
-
-		.embeds {
-			display: none;
-		}
-
-		.fade {
-		animation-name: fade;
-		animation-duration: 1.5s;
-		}
-
-		@keyframes fade {
-		from {opacity: .4}
-		to {opacity: 1}
-		}
-}
+.fade {animation-name: fade;animation-duration: 1.5s;}
+@keyframes fade {from {opacity: .4}to {opacity: 1}}

@@ -65,7 +65,7 @@
 
 				}
 
-				.as {
+				.an {
 
 				background-color: #131313;
 				font-family: 'Poppins', sans-serif;
@@ -81,9 +81,7 @@
 
 				}
 
-
-
-				.bd {
+				.sci {
 
 				background-color: #131313;
 				font-family: 'Poppins', sans-serif;
@@ -93,6 +91,9 @@
 
 				margin              : 0;
 				padding             : 0;
+
+			    background: url("https://cdn.glitch.global/461f1741-3fef-48c8-9e24-65dc0848aaff/ba.png?v=1673244876468") no-repeat center top #131313 ;
+			    min-height:100%;
 
 				}
 
