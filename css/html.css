@@ -60,8 +60,8 @@
 				margin              : 0;
 				padding             : 0;
 
-			    background: url("https://cdn.glitch.global/461f1741-3fef-48c8-9e24-65dc0848aaff/back.png?v=1672887320555") no-repeat center top #131313;
-			    min-height:100%;
+				background: rgb(19, 19, 19);
+				min-height:100%;
 
 				}
 
@@ -76,14 +76,13 @@
 				margin              : 0;
 				padding             : 0;
 
-			    background: url("https://cdn.glitch.global/461f1741-3fef-48c8-9e24-65dc0848aaff/back2.png?v=1672892450187") no-repeat center top #131313 ;
-			    min-height:100%;
+				background: rgb(24, 24, 24);
+				min-height:100%;
 
 				}
 
 				.sci {
 
-				background-color: #131313;
 				font-family: 'Poppins', sans-serif;
 				font-size           : 25px;
 				animation-name: fade;
@@ -92,9 +91,8 @@
 				margin              : 0;
 				padding             : 0;
 
-			    background: url("https://cdn.glitch.global/461f1741-3fef-48c8-9e24-65dc0848aaff/ba.png?v=1673244876468") no-repeat center top #131313 ;
-			    min-height:100%;
-
+				background: rgb(24, 24, 24);
+				min-height:100%;
 				}
 
 				body::-webkit-scrollbar {

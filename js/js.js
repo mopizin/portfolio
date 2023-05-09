@@ -12,7 +12,7 @@ var myDate = new Date();
 		  } else if (h >= 18 && h <= 23) { // entre 18 (6h) e 23 (11h) da noite
 		    greet =  'Boa noite';
 		  }
-		document.getElementById('j').innerHTML = greet + ' e Saudações visitante, como vai?, espero que esteja bem, atualização nova e está bem simples para navegar, então não tenho muito o que falar nesta pequena apresentação mas espero que curta o meu trabalhos já feito, mesmo sendo pra anime ou entre outras categorias! ';
+		document.getElementById('j').innerHTML = greet + ' e saudações visitante, como vai?, espero que esteja bem, atualização nova e está bem simples para navegar, então não tenho muito o que falar nesta pequena apresentação mas espero que curta o meu trabalhos já feito, mesmo sendo pra anime ou entre outras categorias! ';
 
 
 $(function() {
@@ -23,5 +23,18 @@ $(function() {
     $('#m').css('opacity', '100%');
   });
 });
+
+
+function copyText() {
+	toastFunction();
+	navigator.clipboard.writeText("mpz#0136");
+}
+
+function toastFunction() {
+	var x = document.getElementById("toast");
+	x.className = "show";
+	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
+
 
 document.addEventListener("contextmenu", function (e){e.preventDefault();}, false);

@@ -26,6 +26,14 @@
 			transform: scale(1.05);
 		}
 
+		.vid {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			margin:10px;
+			padding:0px;
+		}
+
 
 		.n {
 			display: flex;
@@ -70,6 +78,60 @@
 		.g:hover, .i:hover {
 			transform:  scale(1.15);
 			color: rgba(255, 255, 255, 1);
+		}
+
+
+		/* SLIDER FEEDBACK */
+		
+		@keyframes scroll {
+			0% { transform: translateX(0); }
+			100% { transform: translateX(calc(-100px * 7))}
+		}
+		
+		.slider {
+			box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+			height: 100px;
+			margin: auto;
+			overflow:hidden;
+			position: relative;
+			width: 960px;
+			
+			&::before,
+			&::after {
+				background: linear-gradient(to right,  #131313 0%,rgba(255,255,255,0) 100%);
+				content: "";
+				height: 100px;
+				position: absolute;
+				width: 200px;
+				z-index: 2;
+			}
+			
+			&::after {
+				right: 0;
+				top: 0;
+				transform: rotateZ(180deg);
+			}
+		
+			&::before {
+				left: 0;
+				top: 0;
+			}
+			
+			.slide-track {
+				animation: scroll 40s linear infinite;
+				display: flex;
+				width: calc(250px * 14);
+			}
+			
+			.slide {
+				height: 100px;
+				width: 250px;
+			}
+
+			.slide img {
+				pointer-events: none;
+				cursor: pointer;
+			}
 		}
 
 		/* NAME */
@@ -124,7 +186,7 @@
 			animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
 		}
 
-		.di h6{
+		.di{
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -183,15 +245,11 @@
 			animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
 		}
 
-		.di h6{
+		.di{
 			display: flex;
-			justify-content: center;
+			flex-wrap: wrap;
 			align-items: center;
-			text-align: center;
-			color: white;
-			font-weight: 400;
-			font-size: 30px;
-			animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+			justify-content: center;
 		}
 	}
 			
@@ -230,7 +288,14 @@
 		  display: block;
 		}
 
-		.di h6:hover {
+		.di {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.di a:hover {
 			color: #7289da;
 			font-weight: bold;
 			transition: color 0.5s ease, font-weight 0.5s ease;
